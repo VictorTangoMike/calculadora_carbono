@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Emissões de Carbono</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="background">
+    <header>
+        <h1 class="header">Calculadora de Emissões de Carbono</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="transport">Tipo de transporte:</label>
+                    <select class="form-control" id="transport">
+                        <option value="" selected disabled hidden>Escolha um veiculo</option>
+                        <option value="carro">Carro</option>
+                        <option value="moto">Moto</option>
+                        <option value="onibus">Ônibus</option>
+                        <option value="bicicleta">Bicicleta</option>
+                    </select>
+                </div>
+                <div class="form-group" id="fuelTypeDiv" style="display: none;">
+                    <label for="fuelType">Tipo de combustível:</label>
+                    <select class="form-control" id="fuelType">
+                        <option value="gasolina">Gasolina</option>
+                        <option value="alcool">Álcool</option>
+                        <option value="diesel">Diesel</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="distance">Distância Percorrida (Km):</label>
+                    <input type="number" class="form-control" id="distance" required>
+                </div>
+                <div class="form-group" id="tripSharedDiv" style="display: none;">
+                    <label for="carona">Deu carona?</label>
+                    <select class="form-control" id="carona">
+                        <option value="nao">Não</option>
+                        <option value="sim">Sim</option>
+                    </select>
+                </div>
+                <div class="form-group" id="passengerCountDiv" style="display: none;">
+                    <label for="passengerCount">Quantidade de passageiros:</label>
+                    <input type="number" class="form-control" id="passengerCount" min="1" value="1">
+                </div>
+                <button type="submit" class="button btn-primary">Calcular Emissões</button>
+            </form>
+        </div>
+        <div class="container-2">
+            <div class="sections">
+                <h2 class="title">Resultados:</h2>
+                <section class="result-container">
+                    <p id="result-content">Aguardando informações...</p>
+                </section>
+            </div>
+            <div class="sections">
+                <h2 class="title">Ranking:</h2>
+                <section class="result-container">
+                    <p id="ranking-content"></p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

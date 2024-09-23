@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin: 5.5rem 3.625rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 2rem;
+}
+
+.container {
+  border-color: #6B6969;
+  border-width: 0px;
+  border-style: solid;
+  padding: 2rem;
+  border-right-width: 0.313rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background: #1c1a1d;
+  color: #fff;
+  z-index: -1;
+  position: absolute;
+}
+
+.header {
+  color: #06D001;
+  font-size: 3rem;
+}
+
+#userForm {
+  font-size: 1.25rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.738rem;
+}
+
+input,
+select {
+  background-color: #272525;
+  color: #fff;
+  border-width: 0px;
+  border-radius: 0.513rem;
+  height: 2.688rem;
+  width: 44.688rem;
+  padding-left: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #059212;
+  font-size: 1.25rem;
+  border-radius: 0.938rem;
+  width: 11.938rem;
+  height: 3.313rem;
+  border-width: 0px;
+  margin-top: 1.875rem;
+}
+
+#userForm .btn-primary {
+  margin-left: auto;
+  margin-right: 0.8rem;
+}
+
+.btn-primary:hover {
+  border-color: #fff;
+  border-width: 0.150rem;
+  transition: 200ms;
+}
+
+.container-2 {
+  padding: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%vw;
+}
+
+.sections {
+  margin-block: 1rem;
+  font-size: 2rem;
+}
+
+.result-container {
+  height: auto;
+  background-color: #272525;
+  padding: 3.125rem;
+  margin-top: 1rem;
+  border-radius: 0.938rem;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1500px) {
+  body {
+    width: 100%vw;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .container {
+    border-width: 0px;
+    border-bottom-width: 0.313rem;
+  }
+
+  input,
+  select {
+    height: 2.688rem;
+    width: 85dvw;
+  }
+
+  #userForm .btn-primary {
+    margin: auto;
+    margin-block: 0.8rem;
+  }
+
+  .sections {
+    margin: auto;
+    width: 85dvw;
+  }
+
+}
