@@ -21,7 +21,7 @@ Este projeto é uma calculadora de pegada de carbono que permite aos usuários c
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/VictorTangoMike/sistema_de_manutencao.git
+   git clone https://github.com/VictorTangoMike/calculadora_carbono.git
 
 2. Ou acesse o site hospedado:
 
